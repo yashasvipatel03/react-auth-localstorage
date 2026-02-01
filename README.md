@@ -49,7 +49,6 @@ index.js
 - Editing profile updates both `users` and `currentUser`
 - Deleting an account removes user data completely from LocalStorage
 
----
 
 ## How to Run the Project
 
