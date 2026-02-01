@@ -54,7 +54,7 @@ index.js
 ## How to Run the Project
 
 1. Clone the repository
-git clone https://github.com/your-username/react-auth-app.git
+git clone https://github.com/yashasvipatel03/react-auth-localstorage
 
 2. Install dependencies
 npm install
