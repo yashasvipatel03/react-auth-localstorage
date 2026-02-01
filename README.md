@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+# React Authentication App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple React authentication application that allows users to register, login, view a dashboard, edit their profile, logout, and delete their account. User data is stored using browser LocalStorage.
 
-## Available Scripts
+This project is created to practice React fundamentals, routing, and state management.
 
-In the project directory, you can run:
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- User Registration
+- User Login
+- Password-based authentication
+- Dashboard access after login
+- Edit user profile details
+- Logout functionality
+- Delete account functionality
+- Protected routes using React Router
+- Data persistence using LocalStorage
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Technologies Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- React
+- React Router DOM
+- JavaScript (ES6)
+- HTML
+- CSS
+- Browser LocalStorage
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Project Structure
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+src/
+components/
+Home.js
+Login.js
+Register.js
+Dashboard.js
+App.js
+App.css
+index.js
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## How Authentication Works
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- All registered users are stored in LocalStorage under the key `users`
+- Logged-in user information is stored under the key `currentUser`
+- If `currentUser` is not found, the dashboard redirects to the login page
+- Editing profile updates both `users` and `currentUser`
+- Deleting an account removes user data completely from LocalStorage
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## How to Run the Project
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Clone the repository
+git clone https://github.com/your-username/react-auth-app.git
 
-## Learn More
+2. Install dependencies
+npm install
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. Start the project
+npm start
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+4. Open the browser and go to
+http://localhost:3000
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Learning Objectives
 
-### Analyzing the Bundle Size
+- Understanding React Hooks (useState, useEffect)
+- Implementing authentication logic
+- Using React Router for navigation
+- Managing state across components
+- Working with LocalStorage
+- Handling form inputs and validation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+## Important Note
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+This project is for learning and practice purposes only.
+LocalStorage authentication is not secure for production use.
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Author
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Name: Yashasvi Patel  
+Degree: Computer Engineering (2025)  
+Skills: React, JavaScript, HTML, CSS
